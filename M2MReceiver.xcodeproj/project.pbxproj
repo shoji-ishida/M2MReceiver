@@ -14,6 +14,9 @@
 		6206B3A519F39E6D00D8704F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6206B3A419F39E6D00D8704F /* Images.xcassets */; };
 		6206B3A819F39E6D00D8704F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6206B3A619F39E6D00D8704F /* LaunchScreen.xib */; };
 		6206B3B419F39E6D00D8704F /* M2MReceiverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6206B3B319F39E6D00D8704F /* M2MReceiverTests.m */; };
+		6206B3BE19F3ADA400D8704F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6206B3BD19F3ADA400D8704F /* CoreLocation.framework */; };
+		6206B3C019F3AE0800D8704F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6206B3BF19F3AE0800D8704F /* Foundation.framework */; };
+		625C454519F4A1FC00BE033C /* ApplianceList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 625C454419F4A1FC00BE033C /* ApplianceList.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		6206B3AD19F39E6D00D8704F /* M2MReceiverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = M2MReceiverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6206B3B219F39E6D00D8704F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6206B3B319F39E6D00D8704F /* M2MReceiverTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = M2MReceiverTests.m; sourceTree = "<group>"; };
+		6206B3BD19F3ADA400D8704F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		6206B3BF19F3AE0800D8704F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		625C454419F4A1FC00BE033C /* ApplianceList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApplianceList.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6206B3C019F3AE0800D8704F /* Foundation.framework in Frameworks */,
+				6206B3BE19F3ADA400D8704F /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +71,8 @@
 		6206B38B19F39E6D00D8704F = {
 			isa = PBXGroup;
 			children = (
+				6206B3BF19F3AE0800D8704F /* Foundation.framework */,
+				6206B3BD19F3ADA400D8704F /* CoreLocation.framework */,
 				6206B39619F39E6D00D8704F /* M2MReceiver */,
 				6206B3B019F39E6D00D8704F /* M2MReceiverTests */,
 				6206B39519F39E6D00D8704F /* Products */,
@@ -96,6 +106,7 @@
 		6206B39719F39E6D00D8704F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				625C454419F4A1FC00BE033C /* ApplianceList.plist */,
 				6206B39819F39E6D00D8704F /* Info.plist */,
 				6206B39919F39E6D00D8704F /* main.m */,
 			);
@@ -168,6 +179,11 @@
 				TargetAttributes = {
 					6206B39319F39E6D00D8704F = {
 						CreatedOnToolsVersion = 6.0.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					6206B3AC19F39E6D00D8704F = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -201,6 +217,7 @@
 			files = (
 				6206B3A319F39E6D00D8704F /* Main.storyboard in Resources */,
 				6206B3A819F39E6D00D8704F /* LaunchScreen.xib in Resources */,
+				625C454519F4A1FC00BE033C /* ApplianceList.plist in Resources */,
 				6206B3A519F39E6D00D8704F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,6 +360,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = M2MReceiver/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +371,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = M2MReceiver/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -412,6 +431,7 @@
 				6206B3B919F39E6D00D8704F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6206B3BA19F39E6D00D8704F /* Build configuration list for PBXNativeTarget "M2MReceiverTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +440,7 @@
 				6206B3BC19F39E6D00D8704F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

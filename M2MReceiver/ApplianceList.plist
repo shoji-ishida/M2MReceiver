@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>洗濯機</string>
+		<key>msgs</key>
+		<array>
+			<string>洗濯が終了しました。</string>
+			<string>乾燥が終了しました。</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>コーヒーメーカー</string>
+		<key>msgs</key>
+		<array>
+			<string>豆引き終了しました。</string>
+			<string>ドリップ終了しました。</string>
+			<string>水が不足しています。</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>照度センサー</string>
+		<key>msgs</key>
+		<array>
+			<string>暗くなりました。</string>
+			<string>明るくなりました。</string>
+		</array>
+	</dict>
+</array>
+</plist>
